@@ -7,9 +7,9 @@ $(".page-scroll").on("click", function (e) {
   var elementTujuan = $(tujuan);
 
   // pindahkan scroll
-  $("body").animate(
+  $("html, body").animate(
     {
-      scroll: elementTujuan.offset().top - 50,
+      scrollTop: elementTujuan.offset().top - 50,
     },
     1250,
     "easeInOutExpo"
